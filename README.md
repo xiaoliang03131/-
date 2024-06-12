@@ -1,5 +1,5 @@
 微信聊天记录然后进行可视化分析
-下载微信聊天记录爬取程序：
+ 
 https://github.com/LC044/WeChatMsg/releases/download/v1.0.6/MemoTrace-1.0.6.exe
 电脑需要登录微信，如果电脑微信聊天记录不齐全，可以通过手机进行微信聊天记录迁移。
 安卓： 手机微信->我->设置->聊天->聊天记录迁移与备份->迁移-> 迁移到电脑微信（迁移完成后重启微信）
@@ -10,8 +10,8 @@ iOS： 手机微信->我->设置->通用->聊天记录迁移与备份->迁移-> 
 导出后的结果在程序同目录下的“data -->  聊天记录“文件中，我们需要csv文件，记住csv文件的地址，自此微信聊天记录爬取结束👌。
 二、内容分析可视化展示：
 环境配置：python3.8（3.10matplotlib不兼容问题） numpy pandas seaborn jieba july wordcloud
+文件 data_analysis.py 为数据可视化代码 stopwords_hit.txt 为哈工大停词表 参考 https://github.com/LC044/WeChatMsg
 代码中需要根据你的CSV文件地址修改以及聊天双方名字修改：
-
 import matplotlib.pyplot as plt
 import pandas as pd
 import re
